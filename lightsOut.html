@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/lightsOut.css">
+    <script src="scripts/lightsOut.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Board games project</h1>
+    <nav>
+        <ul>
+            <li><a href="lightsOut.html">Lights Out</a></li>
+            <li><a href="hangman.html">Hangman</a></li>
+            <li><a href="4inRow.html">4 in row</a></li>
+            <li><a href="memorygame.html">Memory game</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="game">
+        <h2 class="game__title">Lights Out</h2>
+        <button class="game-start-button button" id="game__start-btn">New game</button>
+        <p id="gameResult"></p>
+        <p id="gameScore">Attempts: 0</p>
+        <div class="game__wrapper">
+            <div>
+        <div id="gameGrid" class="game__grid">
+
+            </div>
+            <button class="button cheat-button" id="cheatBtn">I'm tired of this, just win this game!</button>
+        </div>
+        <div id="leaderBoard" class="leaderboard">
+            <h3>Top players:</h3>
+            <ul class="leaderboard-list" id="leaderboardList"></ul>
+        </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/hangman.css">
+</head>
+<body>
+    <header>
+        <h1>Board games project</h1>
+        <nav>
+            <ul>
+                <li><a href="lightsOut.html">Lights Out</a></li>
+                <li><a href="hangman.html" id="active">Hangman</a></li>
+                <li><a href="4inRow.html">4 in row</a></li>
+                <li><a href="memorygame.html">Memory game</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="flexRow">
+            <div class="flexCol">
+                <p id="word"></p>
+                <div class="flex">
+                    <p id="lives"></p>
+                    <p id="counter"></p>
+                </div>
+                <div id="topscore"></div>
+            </div>
+            <div id="hangman">
+                <img id="hangmanImg" src="" alt="">
+            </div>
+        </div>
+        <div><h3 id="win"></h3></div>
+        <section id="buttons"></section>
+    </main>
+    <script src="./scripts/hangman.js"></script>
+</body>
+</html>

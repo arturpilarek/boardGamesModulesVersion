@@ -1,0 +1,112 @@
+
+h2 {
+  color: hotpink; 
+  margin: 4rem 0;
+}
+
+#alphabet {
+  margin: 2rem auto;
+  padding: 0;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#alphabet li {
+  margin: 1rem;
+  padding: 1rem;
+  background: hotpink;
+  color: white;
+  border: solid 1px white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#alphabet li:hover {
+  background: white;
+  border: solid 1px hotpink;
+  color: hotpink;
+}
+
+.usedLetter {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.usedLetter:hover {
+  opacity: 0.4;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 4rem;
+  margin-right: 4rem;
+}
+
+#word {
+  color: hotpink;
+  font-size: 40px;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
+#win {
+  color: hotpink;
+  text-decoration: underline;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#hangman {
+  height: 20rem;
+  width: 30rem;
+  border: 1px solid hotpink;
+}
+#hangmanImg {
+  height: 20rem;
+  width: 30rem;
+}
+
+#lives, #counter {
+  background-color: hotpink;
+  padding: 1rem;
+  color: white;
+  border-radius: 10px;
+  margin-right: 2rem
+}
+
+#topscore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hotpink;
+  padding: 1rem;
+  color: white;
+  border-radius: 10px;
+  width: 22rem;
+}
+
+#topscore div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

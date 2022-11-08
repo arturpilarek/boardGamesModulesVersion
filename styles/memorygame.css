@@ -1,0 +1,61 @@
+#hidden {
+    display: none;
+}
+
+#show {
+    display: block;
+}
+
+#won {
+    background-color: lightgreen;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: .5rem;
+    margin-top: 1rem;
+  }
+
+#grid div {
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid hotpink;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid div:hover {
+    border: 2px solid hotpink;
+}
+
+#grid div p{
+    font-size: 1.5em;
+    margin: auto;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#message, #timer, #set {
+    background-color: hotpink;
+    width: 20%;
+    padding: 1rem;
+    color: white;
+    border-radius: 10px;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+}
+#winner {
+    width: 100%;
+    text-align: center;
+    color: hotpink;
+    text-transform: uppercase;
+}

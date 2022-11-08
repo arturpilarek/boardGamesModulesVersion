@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+
+body, button {
+    font-family: Karla, sans-serif;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    background-color: hotpink;
+    border: 1px solid white;
+
+}
+button:hover {
+    background-color: white;
+    border: hotpink 1px solid;
+    color: hotpink
+}
+
+.game-start-button {
+    margin-bottom: 1em;
+}
+
+.cheat-button {
+    margin-top: 2em;
+}
+
+
+.game__title {
+    font-size: 1.5rem;
+    padding: 0.5em 0;
+}
+
+.game__wrapper {
+    display: flex;
+    gap: 1em;
+}
+
+#gameScore {
+    font-weight: 600;
+    padding: 0.5em 0;
+}
+
+
+.game__grid {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(5, 100px);
+    border: 2px solid hotpink;
+    width: fit-content;
+}
+
+.game-grid__tile {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid hotpink;
+}
+
+.game-grid__tile:hover {
+    border: 3px solid hotpink;
+}
+
+.leaderboard-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.leaderboard-list h3 {
+    font-size: 1em;
+}
+
+.leaderboard-list li {
+    padding: 0.5em 0;
+}
+
+.lightOn {
+    background-image: url(../assets/bulbs/bulbOn.png);
+    animation: flip 1s linear;
+}
+
+
+
+.lightOff {
+    background-image: url(../assets/bulbs/bulbOff.png);
+    animation: flip 1s linear;
+}
+
+@keyframes flip {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0);
+    }
+}

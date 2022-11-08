@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 4rem;
+    font-family: Karla, sans-serif;
+}
+
+h1 {
+    color: hotpink; 
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+
+}
+
+li {
+    margin: 0 1rem 0 0;
+    padding: 1rem 0;
+
+}
+li:hover {
+    background-color: white; 
+    color: hotpink;
+}
+
+a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: hotpink;
+    border-radius: 10px;
+    border: white 1px solid;
+}
+
+a:hover {
+    background-color: white;
+    border: hotpink 1px solid;
+    color: hotpink
+}
+
+#active {
+    background-color: white;
+    border: hotpink 1px solid;
+    color: hotpink
+}
